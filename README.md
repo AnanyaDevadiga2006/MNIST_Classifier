@@ -1,17 +1,56 @@
-# MNIST Digit Classifier
+# MNIST Multiclass Classifier 
 
-This project is a simple **multiclass classifier** that can recognize handwritten digits (0-9) using the MNIST dataset.
+This project trains a **Convolutional Neural Network (CNN)** to classify handwritten digits (0–9) using the MNIST dataset.
 
-## How it works:
-1. Loads the MNIST dataset from Keras.
-2. Preprocesses the data (normalizes pixel values and flattens images).
-3. Builds a neural network model with one hidden layer.
-4. Trains the model for 5 epochs.
-5. Evaluates the model on test data.
-6. Saves the trained model as `mnist_model.h5`.
-7. Can make predictions on new images.
+## Features
+- Train a multiclass CNN on MNIST
+- Evaluate test accuracy
+- Predict new handwritten images
+- Save and load trained model
+- Visualize training accuracy & loss
 
-## Usage:
-1. Make sure you have Python 3.x and required libraries installed:
-   ```bash
-   pip install tensorflow numpy
+## Project Structure
+MNIST_Classifier/
+│── src/          # Python scripts
+│── models/       # Saved model
+│── img/          # Sample images for predictions & plots
+│── notebooks/    # Optional notebooks
+│── README.md
+│── requirements.txt
+│── .gitignore
+
+## Installation
+```bash
+git clone https://github.com/YOUR_USERNAME/MNIST_Classifier.git
+cd MNIST_Classifier
+pip install -r requirements.txt
+Usage
+bash
+Copy code
+# Train the model
+python src/train.py
+
+# Evaluate model
+python src/evaluate.py
+
+# Predict a custom image
+python src/predict.py img/3.png
+Note: Input images should be grayscale 28×28 pixels.
+
+Future Improvements
+Add more CNN layers
+
+Use EMNIST (letters + digits)
+
+Deploy as a web app
+
+License
+MIT License
+
+yaml
+Copy code
+
+---
+
+If you want, I can **also create the ready-to-use `img/` folder with digits 0–9** so that anyone cloning your repo can run `predict.py` immediately without errors.  
+

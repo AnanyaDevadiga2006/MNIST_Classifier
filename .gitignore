@@ -1,0 +1,12 @@
+# Python cache
+__pycache__/
+
+# Ignore models
+models/*.h5
+
+# Ignore images
+images/*.png
+images/*.jpg
+
+# Ignore notebook checkpoints
+*.ipynb_checkpoints/
